@@ -1,0 +1,25 @@
+﻿{
+  "name": "IISKachestvo_vody_v_rodnikakh_permskogo_krayaРодник",
+  "modelName": "i-i-s-kachestvo-vody-v-rodnikakh-permskogo-kraya-родник",
+  "className": "Родник",
+  "nameSpace": "IIS.Kachestvo_vody_v_rodnikakh_permskogo_kraya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "координаты",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

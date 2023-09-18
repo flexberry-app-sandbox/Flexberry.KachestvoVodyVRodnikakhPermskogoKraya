@@ -1,0 +1,1 @@
+docker-compose -p kachestvo_vody_v_rodnikakh_permskogo_kraya up -d
