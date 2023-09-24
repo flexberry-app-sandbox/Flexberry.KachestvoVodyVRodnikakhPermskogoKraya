@@ -1,0 +1,15 @@
+﻿{
+  "name": "IISKachestvo_vody_v_rodnikakh_permskogo_krayaPhoto",
+  "modelName": "i-i-s-kachestvo-vody-v-rodnikakh-permskogo-kraya-photo",
+  "className": "Photo",
+  "nameSpace": "IIS.Kachestvo_vody_v_rodnikakh_permskogo_kraya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

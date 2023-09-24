@@ -1,0 +1,15 @@
+﻿{
+  "name": "IISKachestvo_vody_v_rodnikakh_permskogo_krayaDateTime",
+  "modelName": "i-i-s-kachestvo-vody-v-rodnikakh-permskogo-kraya-date-time",
+  "className": "DateTime",
+  "nameSpace": "IIS.Kachestvo_vody_v_rodnikakh_permskogo_kraya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

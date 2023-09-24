@@ -3,9 +3,57 @@
 
 
 
-CREATE TABLE Родник (
+CREATE TABLE DateTime (
  primaryKey UUID NOT NULL,
- Координаты VARCHAR(255) NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE CheckFile (
+ primaryKey UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE Photo (
+ primaryKey UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE "User" (
+ primaryKey UUID NOT NULL,
+ userId VARCHAR(255) NULL,
+ userLogin VARCHAR(255) NULL,
+ userType INT NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE UserAll (
+ primaryKey UUID NOT NULL,
+ userRole INT NULL,
+ userMail VARCHAR(255) NULL,
+ userLogin VARCHAR(255) NULL,
+ userAvatar VARCHAR(255) NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE Comment (
+ primaryKey UUID NOT NULL,
+ springId INT NULL,
+ isDeleted BOOLEAN NULL,
+ userId INT NULL,
+ commentText VARCHAR(255) NULL,
+ commentId INT NULL,
+ createDttm VARCHAR(255) NULL,
+ PRIMARY KEY (primaryKey));
+
+
+CREATE TABLE Spring (
+ primaryKey UUID NOT NULL,
+ isVerified BOOLEAN NULL,
+ springLatitude VARCHAR(255) NULL,
+ springDescription VARCHAR(255) NULL,
+ springName VARCHAR(255) NULL,
+ springLongtitude VARCHAR(255) NULL,
+ quality INT NULL,
  PRIMARY KEY (primaryKey));
 
 

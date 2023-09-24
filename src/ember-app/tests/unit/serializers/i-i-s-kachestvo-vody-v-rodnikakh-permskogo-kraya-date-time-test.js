@@ -1,8 +1,14 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('i-i-s-kachestvo-vody-v-rodnikakh-permskogo-kraya-родник', 'Unit | Model | i-i-s-kachestvo-vody-v-rodnikakh-permskogo-kraya-родник', {
+moduleForModel('i-i-s-kachestvo-vody-v-rodnikakh-permskogo-kraya-date-time', 'Unit | Serializer | i-i-s-kachestvo-vody-v-rodnikakh-permskogo-kraya-date-time', {
   // Specify the other units that are required for this test.
   needs: [
+    'serializer:i-i-s-kachestvo-vody-v-rodnikakh-permskogo-kraya-date-time',
+    'service:syncer',
+    'transform:file',
+    'transform:decimal',
+    'transform:guid',
+
     'model:i-i-s-kachestvo-vody-v-rodnikakh-permskogo-kraya-check-file',
     'model:i-i-s-kachestvo-vody-v-rodnikakh-permskogo-kraya-comment',
     'model:i-i-s-kachestvo-vody-v-rodnikakh-permskogo-kraya-date-time',
@@ -17,13 +23,14 @@ moduleForModel('i-i-s-kachestvo-vody-v-rodnikakh-permskogo-kraya-родник', 
     'validator:date',
     'validator:belongs-to',
     'validator:has-many',
-    'service:syncer',
   ],
 });
 
-test('it exists', function(assert) {
-  let model = this.subject();
+// Replace this with your real tests.
+test('it serializes records', function(assert) {
+  let record = this.subject();
 
-  // let store = this.store();
-  assert.ok(!!model);
+  let serializedRecord = record.serialize();
+
+  assert.ok(serializedRecord);
 });

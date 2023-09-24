@@ -2,12 +2,102 @@
 
 
 
-CREATE TABLE "Родник"
+CREATE TABLE "DateTime"
 (
 
 	"primaryKey" RAW(16) NOT NULL,
 
-	"Координаты" NVARCHAR2(255) NOT NULL,
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
+CREATE TABLE "CheckFile"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
+CREATE TABLE "Photo"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
+CREATE TABLE "User"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"userId" NVARCHAR2(255) NULL,
+
+	"userLogin" NVARCHAR2(255) NULL,
+
+	"userType" NUMBER(10) NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
+CREATE TABLE "UserAll"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"userRole" NUMBER(10) NULL,
+
+	"userMail" NVARCHAR2(255) NULL,
+
+	"userLogin" NVARCHAR2(255) NULL,
+
+	"userAvatar" NVARCHAR2(255) NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
+CREATE TABLE "Comment"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"springId" NUMBER(10) NULL,
+
+	"isDeleted" NUMBER(1) NULL,
+
+	"userId" NUMBER(10) NULL,
+
+	"commentText" NVARCHAR2(255) NULL,
+
+	"commentId" NUMBER(10) NULL,
+
+	"createDttm" NVARCHAR2(255) NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
+CREATE TABLE "Spring"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"isVerified" NUMBER(1) NULL,
+
+	"springLatitude" NVARCHAR2(255) NULL,
+
+	"springDescription" NVARCHAR2(255) NULL,
+
+	"springName" NVARCHAR2(255) NULL,
+
+	"springLongtitude" NVARCHAR2(255) NULL,
+
+	"quality" NUMBER(10) NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;

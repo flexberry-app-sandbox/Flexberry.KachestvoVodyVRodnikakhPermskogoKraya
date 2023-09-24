@@ -2,11 +2,89 @@
 
 
 
-CREATE TABLE [Родник] (
+CREATE TABLE [DateTime] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
 
-	 [Координаты] VARCHAR(255)  NOT NULL,
+	 PRIMARY KEY ([primaryKey]))
+
+
+CREATE TABLE [CheckFile] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
+CREATE TABLE [Photo] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
+CREATE TABLE [User] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [userId] VARCHAR(255)  NULL,
+
+	 [userLogin] VARCHAR(255)  NULL,
+
+	 [userType] INT  NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
+CREATE TABLE [UserAll] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [userAvatar] VARCHAR(255)  NULL,
+
+	 [userLogin] VARCHAR(255)  NULL,
+
+	 [userMail] VARCHAR(255)  NULL,
+
+	 [userRole] INT  NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
+CREATE TABLE [Comment] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [commentId] INT  NULL,
+
+	 [commentText] VARCHAR(255)  NULL,
+
+	 [createDttm] VARCHAR(255)  NULL,
+
+	 [isDeleted] BIT  NULL,
+
+	 [springId] INT  NULL,
+
+	 [userId] INT  NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
+CREATE TABLE [Spring] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [isVerified] BIT  NULL,
+
+	 [quality] INT  NULL,
+
+	 [springDescription] VARCHAR(255)  NULL,
+
+	 [springLatitude] VARCHAR(255)  NULL,
+
+	 [springLongtitude] VARCHAR(255)  NULL,
+
+	 [springName] VARCHAR(255)  NULL,
 
 	 PRIMARY KEY ([primaryKey]))
 

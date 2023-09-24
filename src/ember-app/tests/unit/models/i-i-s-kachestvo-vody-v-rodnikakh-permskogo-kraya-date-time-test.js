@@ -1,6 +1,6 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('i-i-s-kachestvo-vody-v-rodnikakh-permskogo-kraya-родник', 'Unit | Model | i-i-s-kachestvo-vody-v-rodnikakh-permskogo-kraya-родник', {
+moduleForModel('i-i-s-kachestvo-vody-v-rodnikakh-permskogo-kraya-date-time', 'Unit | Model | i-i-s-kachestvo-vody-v-rodnikakh-permskogo-kraya-date-time', {
   // Specify the other units that are required for this test.
   needs: [
     'model:i-i-s-kachestvo-vody-v-rodnikakh-permskogo-kraya-check-file',
